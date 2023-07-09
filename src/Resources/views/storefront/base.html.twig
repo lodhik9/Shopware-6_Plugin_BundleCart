@@ -1,0 +1,12 @@
+{% sw_extends '@Storefront/storefront/base.html.twig' %}
+
+{% block awesome_block_name %}
+    {% set bundleExample = context.context.extensions.bundleExample %}
+    {% if bundleExample.active %}
+        <h1>Do awesome stuff</h1>
+    
+        <div>{{ "bundle-example.hello-world"|trans }}</div>
+                
+    {% endif %} 
+{{ parent() }}
+{% endblock %}

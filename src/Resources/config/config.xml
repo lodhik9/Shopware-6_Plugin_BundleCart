@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/master/src/Core/System/SystemConfig/Schema/config.xsd">
+    <card>
+        <title>Basic Configuration</title>
+        <title lang="de-DE">Allgemeine Konfiguration</title>
+        <input-field type="bool">
+            <name>active</name>
+            <label>Active</label>
+            <label lang="de-DE">Aktiv</label>
+            <defaultValue>true</defaultValue>
+        </input-field>
+    </card>
+    <card>
+        <title>Debug configuration</title>
+        <title lang="de-DE">Debug Konfiguration</title>
+        <input-field type="single-select">
+            <name>loggingLevel</name>
+            <label>Logging level</label>
+            <label lang="de-DE">Logging Level</label>
+            <defaultValue>error</defaultValue>
+            <options>
+                <option>
+                    <id>none</id>
+                    <name>0 - None</name>
+                    <name lang="de-DE">0 - Keine</name>
+                </option>
+                <option>
+                    <id>debug</id>
+                    <name>100 - Debug</name>
+                    <name lang="de-DE">100 - Debug</name>
+                </option>
+                <option>
+                    <id>info</id>
+                    <name>200 - Info</name>
+                    <name lang="de-DE">200 - Info</name>
+                </option>
+                <option>
+                    <id>error</id>
+                    <name>400 - Error</name>
+                    <name lang="de-DE">400 - Error</name>
+                </option>
+            </options>
+        </input-field>
+    </card>
+</config>

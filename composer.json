@@ -1,0 +1,41 @@
+{
+    "name": "tanmar/bundle-example",
+    "description": "BundleExample",
+    "version": "1.0.0",
+    "type": "shopware-platform-plugin",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Tanmar Webentwicklung"
+        }
+    ],
+    "require": {
+        "shopware/core": "~6.5",
+        "shopware/storefront": "*"
+    },
+    "extra": {
+        "shopware-plugin-class": "Tanmar\\BundleExample\\BundleExample",
+        "copyright": "(c) by Tanmar Webentwicklung",
+        "label": {
+            "de-DE": "BundleExample",
+            "en-GB": "BundleExample"
+        },
+        "description": {
+            "de-DE": "BundleExample",
+            "en-GB": "BundleExample"
+        },
+        "manufacturerLink": {
+            "de-DE": "https://www.tanmar.de",
+            "en-GB": "https://www.tanmar.de"
+        },
+        "supportLink": {
+            "de-DE": "https://www.tanmar.de/kontakt/",
+            "en-GB": "https://www.tanmar.de/kontakt/"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Tanmar\\BundleExample\\": "src/"
+        }
+    }
+}

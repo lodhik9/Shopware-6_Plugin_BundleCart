@@ -1,0 +1,20 @@
+{
+    "name": "BundleExample",
+    "author": "Tanmar Webentwicklung",
+    "views": [
+        "@Storefront",
+        "@Plugins",
+        "@BundleExample"
+    ],
+    "style": [
+        "app/storefront/src/scss/overrides.scss",
+        "@Storefront",
+        "app/storefront/src/scss/base.scss"
+    ],
+    "script": [
+        "@Storefront"
+    ],
+    "asset": [
+        "@Storefront"
+    ]
+}
