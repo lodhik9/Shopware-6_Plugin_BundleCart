@@ -37,6 +37,11 @@
             <argument type="service" id="Tanmar\BundleExample\Components\Helper\LoggerHelper"/>
             <tag name="kernel.event_subscriber"/>
         </service>
+        
+        <!--Added after the template-->
+        <service id="Tanmar\BundleExample\Core\Content\Bundle\BundleDefinition">
+            <tag name="shopware.entity.definition" entity="swag_bundle" />
+        </service>
 
     </services>
 </container>
