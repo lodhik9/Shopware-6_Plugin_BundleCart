@@ -25,6 +25,7 @@ class ProductExtension extends EntityExtension
         //Runtime fields are not searchable
         $collection->add(
             (new ObjectField('custom_string', 'customString'))->addFlags(new Runtime())
+                
         );
     }
 
