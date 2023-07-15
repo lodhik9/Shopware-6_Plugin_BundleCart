@@ -23,18 +23,18 @@ class BundleProductDefinition extends MappingEntityDefinition
 {
     public function getEntityName(): string
     {
-        return 'swag_bundle';
+        return 'swag_bundle_product';
     }
 
-    public function getEntityClass(): string
-    {
-        return BundleEntity::class;
-    }
-    
-    public function getCollectionClass(): string
-    {
-        return BundleCollection::class;
-    }
+//    public function getEntityClass(): string
+//    {
+//        return BundleEntity::class;
+//    }
+//    
+//    public function getCollectionClass(): string
+//    {
+//        return BundleCollection::class;
+//    }
 
 
 //    It is a mapping table: it maps products to the bundles

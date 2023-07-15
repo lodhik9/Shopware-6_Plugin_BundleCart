@@ -43,6 +43,15 @@
             <tag name="shopware.entity.definition" entity="swag_bundle" />
         </service>
         
+        <service id="Tanmar\BundleExample\Core\Content\Bundle\Aggregate\BundleTranslation\BundleTranslationDefinition">
+            <tag name="shopware.entity.definition" entity="swag_bundle_translation" />
+        </service>
+        
+        <service id="Tanmar\BundleExample\Core\Content\Bundle\Aggregate\BundleProduct\BundleProductDefinition">
+            <tag name="shopware.entity.definition" entity="swag_bundle_product" />
+        </service>
+        
+        
         <service id="Tanmar\BundleExample\Core\Content\Product\ProductExtension">
             <tag name="shopware.entity.extension" />
           </service>

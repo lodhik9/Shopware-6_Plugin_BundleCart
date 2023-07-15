@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Tanmar\BundleExample\Core\Content\Bundle;
 
@@ -8,6 +8,7 @@ use Shopware\Core\Framework\DataAbstractionLayer\Field\BoolField;
 use Shopware\Core\Framework\DataAbstractionLayer\Field\FkField;
 use Shopware\Core\Framework\DataAbstractionLayer\Field\IntField;
 use Shopware\Core\Framework\DataAbstractionLayer\Field\StringField;
+use Shopware\Core\Framework\DataAbstractionLayer\Field\FloatField;
 use Shopware\Core\Framework\DataAbstractionLayer\Field\ManyToManyAssociationField;
 use Shopware\Core\Framework\DataAbstractionLayer\FieldCollection;
 use Shopware\Core\Framework\DataAbstractionLayer\Field\TranslationField;
@@ -38,6 +39,9 @@ class BundleDefinition extends EntityDefinition
             new TranslationField('name'),
 //            (new StringField('description', 'description'))->setFlags(new Required()),
             new TranslationField('description'),
+            (new StringField('discount_type','discountType'))->addFlags(new Requried()),
+            (new FloatField('discount','discount'))->addFlags(new Required()),
+            // Add Associations for Translations and your ManyToMany Associations
             new TranslationAssociationField(BundleTranslationDefinition::class, 'swag_bundle_id'),
             new ManyToManyAssociationField('products',ProductDefnition::class, BundleProductDefinition::class, 'swag_product_id' ),
     //            new FkField('image_id', 'imageId', MediaDefinition::class),
