@@ -40,7 +40,7 @@ class BundleDefinition extends EntityDefinition
             new TranslationField('description'),
             new TranslationAssociationField(BundleTranslationDefinition::class, 'swag_bundle_id'),
             new ManyToManyAssociationField('products',ProductDefnition::class, BundleProductDefinition::class, 'swag_product_id' ),
-//            new FkField('image_id', 'imageId', MediaDefinition::class),
+    //            new FkField('image_id', 'imageId', MediaDefinition::class),
 //            new ManyToOneAssociationField('image', 'image_id', MediaDefinition::class, 'id', false),
 //            new IntField('age', 'age'),
 //            new BoolField('active', 'active'),

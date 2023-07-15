@@ -42,6 +42,10 @@
         <service id="Tanmar\BundleExample\Core\Content\Bundle\BundleDefinition">
             <tag name="shopware.entity.definition" entity="swag_bundle" />
         </service>
+        
+        <service id="Tanmar\BundleExample\Core\Content\Product\ProductExtension">
+            <tag name="shopware.entity.extension" />
+          </service>
 
     </services>
 </container>
