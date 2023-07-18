@@ -12,14 +12,14 @@ class BundleEntity extends Entity
     use EntityIdTrait; // Include the EntityIdTrait for ID handling
 
     /**
-     * @var string|null
+     * @var string
      */
-    protected ?string $name;
+    protected string $name;
 
     /**
-     * @var string|null
+     * @var string
      */
-    protected ?string $description;
+    protected string $description;
     
     /**
      * @var string
@@ -36,9 +36,9 @@ class BundleEntity extends Entity
         /**
      * Get the Name.
      *
-     * @return string|null
+     * @return string
      */
-    public function getName(): ?string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -46,9 +46,9 @@ class BundleEntity extends Entity
     /**
      * Set the title.
      *
-     * @param string|null $title
+     * @param string $title
      */
-    public function setName(?string $name): void
+    public function setName(string $name): void
     {
         $this->name = $name;
     }
@@ -151,9 +151,9 @@ class BundleEntity extends Entity
     /**
      * Get the products.
      *
-     * @return ProductCollection|null
+     * @return ProductCollection
      */
-    public function getProducts(): ?ProductCollection
+    public function getProducts(): ProductCollection
     {
         return $this->products;
     }
@@ -161,9 +161,9 @@ class BundleEntity extends Entity
     /**
      * Set the products.
      *
-     * @param ProductCollection|null $products
+     * @param ProductCollection $products
      */
-    public function setProducts(?ProductCollection $products): void
+    public function setProducts(ProductCollection $products): void
     {
         $this->products = $products;
     }

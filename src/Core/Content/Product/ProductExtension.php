@@ -12,6 +12,7 @@ use Shopware\Core\Framework\DataAbstractionLayer\Field\Flag\Runtime;
 use Shopware\Core\Framework\DataAbstractionLayer\Field\ManyToManyAssociationField;
 use Tanmar\BundleExample\Core\Content\Bundle\BundleDefinition;
 use Tanmar\BundleExample\Core\Content\Bundle\Aggregate\BundleProduct\BundleProductDefinition;
+use Shopware\Core\Framework\DataAbstractionLayer\Field\Flag\Inherited;
 
 class ProductExtension extends EntityExtension
 {
@@ -30,17 +31,21 @@ class ProductExtension extends EntityExtension
 //            (new ObjectField('custom_string', 'customString'))->addFlags(new Runtime())
 //                
 //        );
+        
+        // TODO: add a new ManyToManyAssociation to the ProductDefinition
+        // bundles is the new column added to the table product in database
         $collection->add(new ManyToManyAssociationField(
                 'bundle',
                 BundleDefinition::class,
                 BundleProductDefinition::class,
                 'product_id',
                 'bundle_id'
-        ));
+        ))->addFlags(new Inherited());
     }
 
     public function getDefinitionClass(): string
     {
+        // TODO: return the class of the definition you want to add to
         return ProductDefinition::class;
     }
 }
