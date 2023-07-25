@@ -20,5 +20,6 @@ class BundleExampleController extends StorefrontController {
      */
     public function index(SalesChannelContext $salesChannelContext, ConfigService $configService) {
         return new Response('<html><body>' . rand() . '</body></html>');
+        
     }
 }

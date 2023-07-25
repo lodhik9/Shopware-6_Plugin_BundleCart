@@ -11,7 +11,7 @@
     ],
     "require": {
         "shopware/core": "~6.5",
-        "shopware/storefront": "*"
+        "shopware/storefront": "^6.5"
     },
     "extra": {
         "shopware-plugin-class": "Tanmar\\BundleExample\\BundleExample",
