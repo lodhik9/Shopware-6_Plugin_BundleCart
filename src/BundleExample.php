@@ -21,6 +21,7 @@ class BundleExample extends Plugin {
     }
     
     public function uninstall(UninstallContext $uninstallContext): void {
+        
        //TODO: if the UninstallContext->keepUserData() === false, 
        // drop the 3 tables your created, drop the bundle column on the product table
         parent::uninstall($uninstallContext);
