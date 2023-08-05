@@ -17,7 +17,6 @@ class BundleExample extends Plugin {
         //TODO: Run InheritanceIndexer, tell indexer to index out out stuff
         $register = $this->container->get(EntityIndexerRegistry::class);
         $register->sendIndexingMessage(['product.indexer']);
-        
     }
     
     public function uninstall(UninstallContext $uninstallContext): void {
