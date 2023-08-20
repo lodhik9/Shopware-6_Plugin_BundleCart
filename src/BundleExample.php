@@ -11,6 +11,7 @@ use Shopware\Core\Framework\Plugin\Context\UninstallContext;
 use Shopware\Core\Framework\DataAbstractionLayer\Indexing\EntityIndexerRegistry;
 
 class BundleExample extends Plugin {
+    
     public function activate(ActivateContext $activateContext): void
     {
         //TODO: Run InheritanceIndexer, tell indexer to index out out stuff
