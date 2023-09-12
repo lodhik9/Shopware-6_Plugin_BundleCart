@@ -14,6 +14,7 @@ class BundleExample extends Plugin {
     
     public function activate(ActivateContext $activateContext): void
     {
+        
         //TODO: Run InheritanceIndexer, tell indexer to index out out stuff
         $register = $this->container->get(EntityIndexerRegistry::class);
         $register->sendIndexingMessage(['product.indexer']);
